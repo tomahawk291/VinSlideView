@@ -14,8 +14,9 @@
 		82CA9EA41B6231520049C86A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CA9EA31B6231520049C86A /* Images.xcassets */; };
 		82CA9EA71B6231520049C86A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CA9EA51B6231520049C86A /* LaunchScreen.xib */; };
 		82CA9EB31B6231520049C86A /* VinSlideViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CA9EB21B6231520049C86A /* VinSlideViewTests.m */; };
-		82CA9EBD1B6232F60049C86A /* MHPagingScrollView in Resources */ = {isa = PBXBuildFile; fileRef = 82CA9EBC1B6232F60049C86A /* MHPagingScrollView */; };
-		82CA9EBF1B62331F0049C86A /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CA9EBE1B62331F0049C86A /* SlideView.xib */; };
+		82DB8F4F1B735D5300150743 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB8F4E1B735D5300150743 /* PageContentViewController.m */; };
+		82DB8F521B73646600150743 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DB8F501B73646600150743 /* 1.png */; };
+		82DB8F531B73646600150743 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DB8F511B73646600150743 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,10 @@
 		82CA9EAC1B6231520049C86A /* VinSlideViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinSlideViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CA9EB11B6231520049C86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82CA9EB21B6231520049C86A /* VinSlideViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VinSlideViewTests.m; sourceTree = "<group>"; };
-		82CA9EBC1B6232F60049C86A /* MHPagingScrollView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MHPagingScrollView; sourceTree = "<group>"; };
-		82CA9EBE1B62331F0049C86A /* SlideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
+		82DB8F4D1B735D5300150743 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		82DB8F4E1B735D5300150743 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		82DB8F501B73646600150743 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		82DB8F511B73646600150743 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 		82CA9E8A1B6231520049C86A = {
 			isa = PBXGroup;
 			children = (
+				82DB8F4D1B735D5300150743 /* PageContentViewController.h */,
+				82DB8F4E1B735D5300150743 /* PageContentViewController.m */,
 				82CA9E951B6231520049C86A /* VinSlideView */,
 				82CA9EAF1B6231520049C86A /* VinSlideViewTests */,
 				82CA9E941B6231520049C86A /* Products */,
@@ -85,14 +90,14 @@
 		82CA9E951B6231520049C86A /* VinSlideView */ = {
 			isa = PBXGroup;
 			children = (
-				82CA9EBE1B62331F0049C86A /* SlideView.xib */,
-				82CA9EBC1B6232F60049C86A /* MHPagingScrollView */,
 				82CA9E9A1B6231520049C86A /* AppDelegate.h */,
 				82CA9E9B1B6231520049C86A /* AppDelegate.m */,
 				82CA9E9D1B6231520049C86A /* ViewController.h */,
 				82CA9E9E1B6231520049C86A /* ViewController.m */,
 				82CA9EA01B6231520049C86A /* Main.storyboard */,
 				82CA9EA31B6231520049C86A /* Images.xcassets */,
+				82DB8F501B73646600150743 /* 1.png */,
+				82DB8F511B73646600150743 /* 2.png */,
 				82CA9EA51B6231520049C86A /* LaunchScreen.xib */,
 				82CA9E961B6231520049C86A /* Supporting Files */,
 			);
@@ -205,11 +210,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DB8F531B73646600150743 /* 2.png in Resources */,
 				82CA9EA21B6231520049C86A /* Main.storyboard in Resources */,
+				82DB8F521B73646600150743 /* 1.png in Resources */,
 				82CA9EA71B6231520049C86A /* LaunchScreen.xib in Resources */,
 				82CA9EA41B6231520049C86A /* Images.xcassets in Resources */,
-				82CA9EBD1B6232F60049C86A /* MHPagingScrollView in Resources */,
-				82CA9EBF1B62331F0049C86A /* SlideView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82CA9E9F1B6231520049C86A /* ViewController.m in Sources */,
+				82DB8F4F1B735D5300150743 /* PageContentViewController.m in Sources */,
 				82CA9E9C1B6231520049C86A /* AppDelegate.m in Sources */,
 				82CA9E991B6231520049C86A /* main.m in Sources */,
 			);
@@ -424,6 +430,7 @@
 				82CA9EB81B6231520049C86A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82CA9EB91B6231520049C86A /* Build configuration list for PBXNativeTarget "VinSlideViewTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				82CA9EBB1B6231520049C86A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
